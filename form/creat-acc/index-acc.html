@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style-acc.css">
+    <title>Create Account</title>
+</head>
+<body>
+    <div class="container">
+        <div class="login-left">
+            <div class="login-header">
+            <h1>Welcome to EnLib</h1>
+            <p>Create Account in EnLib</p>
+            <p class="error-msg">Email already exists.</p>
+        </div>
+        
+        <form class="login-form" id="form" action="/">
+            
+            <div class="login-form-content">
+                <div class="input-control">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="username">
+                    <div class="error"></div>
+                </div>
+                <div class="input-control">
+                    <label for="email">Enter Email</label>
+                    <input type="text" id="email">
+                    <div class="error"></div>
+                </div>
+                <div class="input-control" id="pass">
+                    <label for="password">Enter Password</label>
+                    <input type="password" id="password">
+                    <div class="error"></div>
+                </div>
+                <div class="input-control" id="pass">
+                    <label for="password">Confirm Password</label>
+                    <input type="password" id="password2">
+                    <div class="error"></div>
+                </div>
+                <button class="sign-up" type="submit" id="submit">Sign up</button>
+            </div>
+           
+        </form>
+        
+        <footer>
+            <h4>Already have an account?</h4>
+            <button class="create-acc">Sign In</button>
+        </footer>
+    </div>
+    <div class="login-right">
+        <img src="./books-acc.png" alt="">
+    </div>
+    
+</body>
+<script src="script.js"></script>
+</html>

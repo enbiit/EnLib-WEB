@@ -1,0 +1,99 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: rgb(2, 0, 36);
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(33, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
+    background-size: cover;
+    padding: 40px;
+}
+
+.forgot-password-form {
+    width: 90%;
+    max-width: 400px;
+    margin: 0 auto;
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+}
+
+.forgot-password-form h2 {
+    margin-top: 10px;
+    font-size: 28px;
+}
+
+.input-control label{
+    display: inline-block;
+    background-color: white;
+    margin-bottom: 10px;
+    position: absolute;
+    padding: 0 10px;
+    transform: translate(30px, -10px);
+    font-size: 14px;
+}
+
+::placeholder{
+    font-size: 15px;
+}
+
+.forgot-password-form input[type="password"] {
+    width: 100%;
+    height: 45px;
+    padding: 0 2rem;
+    outline: none;
+    font-size: 18px;
+    border-radius: 100px;
+    margin-bottom: 20px;
+    transition: background .6s;
+}
+
+.forgot-password-form button[type="submit"] {
+    background: rgb(2, 0, 36);
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(33, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
+    font-size: 18px;
+    border: none;
+    color: white;
+    border-radius: 100px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.forgot-password-form p {
+    display: none;
+    color: rgb(3, 195, 3);
+}
+
+.forgot-password-form button[type="submit"]:hover {
+    transform: scale(1.03);
+}
+
+.input-control input:focus {
+    outline: 0;
+  }
+  
+  .input-control.success input {
+    border-color: #09c372;
+  }
+  
+  .input-control.error input {
+    border-color: #ff3860;
+  }
+  
+  .input-control .error {
+    color: #ff3860;
+    font-size: 13px;
+    height: 13px;
+    margin-bottom: 10px;
+  }
+
+@media screen and (min-width: 768px) {
+    .forgot-password-form {
+        margin-top: 10%;
+    }
+}
