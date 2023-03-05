@@ -156,9 +156,28 @@ input[type="checkbox"]{
 }
 
 @media (max-width: 1350px) {
-
+    .login-left{
+        padding: 50px !important;
+    }
+    .login-form{
+        width: 100%;
+    }
+    .create-acc{
+        width: 100%;
+    }
 }
 
 @media(max-width: 786px){
-
+    body{
+        padding: 20px;
+    }
+    .container{
+        grid-template-columns: auto;
+    }
+    .login-right{
+        display:none;
+    }
+    .create-acc{
+        width: 100%;
+    }
 }
