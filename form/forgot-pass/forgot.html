@@ -4,27 +4,29 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style-forgot.css">
+    <link rel="stylesheet" href="../style-form.css">
     <title>Forgot Password</title>
 </head>
-<body>
+<body id="forgot-password-body">
     <div class="forgot-password-form">
         <h2>Forgot Password</h2>
-        <p class="valid-cred">Verification code sent to your email!</p>
-        <p class="invalid-cred">Invalid Credentials</p>
+        <p class="valid-input">Verification code sent to your email!</p>
+        <p class="error-msg">Invalid Input!</p>
         <form>
           <div class="input-control" id="pass">
                     <label for="email">Email</label>
-                    <input type="email" id="email">
+                    <input type="email" id="email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
                 </div>
-                <button type="submit1">Get Code</button>
+                <div>
+                <button type="btn-getcode" class="btn-getcode">Get Code</button>
                 <div class="input-control" id="pass">
                     <label for="code">Verification Code</label>
-                    <input type="text" id="vcode">
+                    <input type="text" id="vcode" required>
                 </div>
         
         </form>
-        <a href="../reset-pass/index-reset.html" target="_blank"> <button type="btn">Submit</button></a>
       </div>      
+      <a href="../reset-pass/reset.html"><button type="btn-submit" class="btn-submit">Submit</button></a>
 </body>
+<script src="forgot.js"></script>
 </html>

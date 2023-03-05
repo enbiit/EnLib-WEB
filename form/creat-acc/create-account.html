@@ -4,21 +4,21 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style-acc.css">
+    <link rel="stylesheet" href="../style-form.css">
     <title>Create Account</title>
 </head>
-<body>
+<body id="create-account">
     <div class="container">
         <div class="login-left">
             <div class="login-header">
             <h1>Welcome to EnLib</h1>
-            <p>Create Account in EnLib</p>
-            <p class="error-msg">Email already exists.</p>
+            <p>Create Account on EnLib</p>
+            <p class="error-msg">Account already exists. Please Login.</p>
         </div>
         
         <form class="login-form" id="form" action="/">
             
-            <div class="login-form-content">
+            <div class="signup-form-content">
                 <div class="input-control">
                     <label for="name">Full Name</label>
                     <input type="text" id="username">
@@ -39,20 +39,19 @@
                     <input type="password" id="password2">
                     <div class="error"></div>
                 </div>
-                <button class="sign-up" type="submit" id="submit">Sign up</button>
+                <button class="btn-sign-up" type="submit" id="submit">Sign up</button>
             </div>
            
         </form>
-        
-        <footer>
-            <h4>Already have an account?</h4>
-           <a href="../login/index-login.html"> <button class="create-acc">Sign In</button></a>
-        </footer>
+        <h4>Already have an account?</h4>
+        <div class="sign-in">
+           <a href="../login/login.html"> <button class="btn-sign-in">Sign In</button></a>
+        </div>
     </div>
     <div class="login-right">
         <img src="./books-acc.png" alt="">
     </div>
     
 </body>
-<script src="script.js"></script>
+<script src="create-account.js"></script>
 </html>
