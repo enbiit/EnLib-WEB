@@ -21,7 +21,21 @@ closeSearch.addEventListener('click', function() {
   loggedinItems.style.display='';
 });
 
-const logoutBtn = document.getElementById('logout-btn');
-const overlay = document.createElement('div');
-overlay.classList.add('overlay');
-const popup = document.createElement('div');
+const logoutButton = document.querySelector('#logout-btn');
+const logoutDialog = document.querySelector('#logout-dialog');
+logoutButton.addEventListener('click', () => {
+  logoutDialog.style.display = 'block';
+});
+
+const cancelButton = document.querySelector('#cancel-button');
+
+cancelButton.addEventListener('click', () => {
+  logoutDialog.style.display = 'none';
+});
+
+const confirmButton= document.querySelector('#confirm-button');
+
+confirmButton.addEventListener('click', () => {
+  window.location.href = '../nav-signin.html';
+});
+

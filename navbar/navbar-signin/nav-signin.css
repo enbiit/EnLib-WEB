@@ -127,10 +127,12 @@ nav {
     height: 20px;
     margin-right: 10px;
     padding-left: 5px;
-    filter: hue-rotate(0deg);
     transition: filter 0.3s ease-in-out;
 }
 
+.login-icon:hover {
+    filter: brightness(120%);
+}
 
 .signin-btn span {
     display: inline-block;
