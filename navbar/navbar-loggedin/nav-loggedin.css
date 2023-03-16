@@ -1,0 +1,183 @@
+.loggedin-items {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+  }
+  
+  .loggedin-items img {
+    display: flex;
+    align-items: center;
+    margin: 10px; 
+    cursor: pointer;
+  }
+  
+  .dropdown {
+    position: relative;
+  }
+  
+  .profile-icon {
+    width: 37.03px;
+    height: 36px;
+    border-radius: 50%;
+  }
+
+  .menu-item {
+    display: flex;
+    align-items: center;
+  }
+
+  .menu-item img {
+    margin-right: 8px;
+  }
+  
+  .dropdown-menu {
+    display: none;
+    position: absolute;
+    /* top: 50%; */
+    left: 50%;
+    border-radius: 5px;
+    width: 190px;
+    transform: translate(-55%);
+    background-color: #fff;
+    border: 1px solid #ccc;
+  }
+  
+  .dropdown-menu a {
+    display: block;
+    padding: 8px;
+    text-decoration: none;
+    color: #333;
+  }
+  
+  .dropdown-menu a:hover {
+    background-color: #f1f1f1;
+  }
+  
+  .dropdown:hover .dropdown-menu {
+    display: block;
+  }
+
+  
+/* Add styles for the popup element */
+.popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  border: 1px solid #ccc;
+  padding: 20px;
+  z-index: 1000;
+  display: none;
+}
+
+/* Add styles to blur the background when popup is displayed */
+.popup-active + .overlay {
+  display: block;
+}
+
+/* Add styles to display the popup when it is active */
+.popup-active {
+  display: block;
+}
+  
+
+/* responsive navbar */
+/* .checkbtn {
+    font-size: 30px;
+    color: #000000;
+    line-height: 80px;
+    margin-left: 20px;
+    cursor: pointer;
+    display: none;
+}
+
+#check {
+    display: none;
+}
+
+.dropdown-content {
+    margin-right: 50px;
+    padding: 10px;
+}
+
+.dropdown-content a{
+    display: block;
+    margin-bottom: 10px;
+    text-decoration: none;
+    color: #DCDCDC;
+}
+
+@media (max-width: 858px) {
+
+    .logo img {
+        width: 80%;
+    }
+
+    .checkbtn {
+        display: block;
+    }
+
+    .nav-links {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        padding: 30px;
+        background-color: rgba(255, 255, 255, 0.764);
+        top: 80px;
+        left: -130%;
+        text-align: center;
+        transition: all .5s;
+    }
+
+    .nav-links li {
+        display: block;
+        padding: 10px;
+        margin: 50px 0;
+        line-height: 30px;
+        color: white;
+        z-index: 2;
+
+    }
+
+    .nav-links img{
+        display: block;
+    }
+
+    .nav-links li a {
+        display: block;
+        font-size: 20px;
+
+    }
+
+    #check:checked~ul {
+        left: 0;
+
+    }
+
+
+
+} */
+
+/* @media only screen and (max-width: 600px) {
+    .search-box {
+        display: none;
+    }
+
+
+    .search-icon {
+        display: block;
+        cursor: pointer;
+        margin-right: 10px;
+    }
+} */
+/* 
+@media (max-width: 768px) {
+    .search-icon {
+      display: block;
+    }
+    .logo,
+    .signin-btn {
+      display: block;
+    }
+  } */
